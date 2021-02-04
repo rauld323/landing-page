@@ -33,26 +33,39 @@
 
 
 		<section class="form">
-			<form class="form-body">
-				<div class="form-group">
-					<input type="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+			<form class="form-body needs-validation" novalidate>
+
+				<div class="form-group" >
+
+					<input  type="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" style="border-top: 15px;" required>
+					<div id="invalid-name" class="invalid-feedback">
+						First Name cannot be empty
+					</div>
+
+					<input type="name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+					 placeholder="Last Name" style="border-top: 15px;" required>
+					<div id="invalid-last" class="invalid-feedback">
+						Last Name cannot be empty
+					</div>
+
+
+					<input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+					 placeholder="Email Address" style="border-top: 15px;" required>
+					<div id="invalid-email" class="invalid-feedback">
+						Looks like this is not an email
+					</div>
+
+					<input type="password" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+					 placeholder="Password" style="border-top: 15px;" required>
+					<div id="invalid-password" class="invalid-feedback">
+						Password cannot be empty
+					</div>
+
+					<button type="submit" id="btn" class="btn btn-primary">CLAIM YOUR FREE TRIAL</button>
+					<small id="emailHelp" class="form-text text-muted">By clicking the button, you are agreeing to</small>
+					<small id="emailHelp" class="form-text text-muted">our Terms and Services</small>
 				</div>
 
-				<div class="form-group">
-					<input type="last-name" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
-				</div>
-
-				<div class="form-group">
-					<input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-				</div>
-
-				<div class="form-group">
-					<input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
-				</div>
-
-				<button type="submit" class="btn btn-primary">Submit</button>
-				<small id="agreement" class="form-text text-muted">By clicking the button, you are agreeingto.</small>
-				<small id="agreement-color" class="form-text text-muted">our Terms and Services</small>
 			</form>
 		</section>
 	</div>
