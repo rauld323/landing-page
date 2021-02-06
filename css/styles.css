@@ -4,7 +4,7 @@ body{
 	background-position: center;
 }
 .opac{
-	background: rgba(242,119,119, 0.75);
+	background: rgba(242,119,119, 0.70);
 }
 .intro{
 	height: 400px;
@@ -87,6 +87,7 @@ box-shadow: 0px 9px 9px 2px rgba(0,0,0,0.37);
 .disclosure{
 	margin-top: 10px;
 	margin-left: 3%;
+	font-size: 14px;
 }
 #invalid-name, #invalid-last, #invalid-email, #invalid-password{
 	margin-left: 55%;
@@ -99,6 +100,11 @@ box-shadow: 0px 9px 9px 2px rgba(0,0,0,0.37);
 }
 #btn{
 	box-shadow: none;
+	border: #36BF7F solid .01px;
+}
+#btn:active{
+	background-color: white;
+	color:#36BF7F;
 }
 
 @media only screen and (min-width: 768px) {
